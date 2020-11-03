@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário Conexão Solar</title>
+    <link rel="stylesheet" href="conexaoSolar.css" />
+  </head>
+  <body>
+  <div class="container">
+    <form method="post" action="/register" name="register">
+      <div class="one-third column">
+        <img src="conexaoSolar.jpg" alt="logo" id="logo" />
+        <h2 class="welcome">CADASTRE-SE GRATUITAMENTE</h2>
+        <p class="intro">DESCUBRA QUAL SISTEMA SOLAR É O IDEAL PARA VOCÊ. </br></br>Nosso propósito é popularizar a energia solar fotovoltaica no Brasil.
+        </p>
+      </div>
+      <div class="one-third column">
+        <br>
+          <div class="name">
+            <label for="name" class="required">Nome:</label>
+            <input type="text" placeholder="Digite seu nome aqui" name="name" id="name" required title="Please enter your name">
+          </div>
+          <div class="email">
+            <label for="email" class="required">Email:</label>
+            <input type="email" placeholder="exemplo@email.com" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">Senha:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="conf-password" class="required">Confirme sua senha:</label>
+            <input type="password" name="conf-password" id="conf-password" required>
+          </div>
+        </fieldset>
+      </div>
+      <div class="one-third column">
+      </br>
+          <div class="birthday">
+            <label for="birthday" class="required">Data de nascimento:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+          </div>
+          <div class="bio">
+            <label for="bio">Escreva alguma dúvida que deseja nos enviar (máximo 140 caracteres):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+          <div class="register"><input type="submit" value="Registrar"></div>
+      </div>
+    </form>
+  </div>
+  <script src="conexaoSolar.html"></script>
+  </body>
+</html>
